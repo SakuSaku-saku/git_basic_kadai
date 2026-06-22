@@ -1,0 +1,43 @@
+PS C:\Users\chant> cd Desktop
+PS C:\Users\chant\Desktop> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\chant\Desktop
+
+
+Mode                 LastWriteTime         Length Name                    
+----                 -------------         ------ ----                    
+d-----        2026/06/22     18:30                git_challenge           
+
+
+PS C:\Users\chant\Desktop> cd git_challenge
+PS C:\Users\chant\Desktop\git_challenge> git init
+Initialized empty Git repository in C:/Users/chant/Desktop/git_challenge/.git/
+PS C:\Users\chant\Desktop\git_challenge> echo "" > hello_world.txt
+PS C:\Users\chant\Desktop\git_challenge> ls
+
+
+    ディレクトリ: C:\Users\chant\Desktop\git_challenge
+
+
+Mode                 LastWriteTime         Length Name                    
+----                 -------------         ------ ----                    
+-a----        2026/06/22     18:32              6 hello_world.txt         
+
+
+PS C:\Users\chant\Desktop\git_challenge> echo "hello, world" >> hello_world.txt
+PS C:\Users\chant\Desktop\git_challenge> git add hello_world.txt
+PS C:\Users\chant\Desktop\git_challenge> git commit -m "hello,world を追加"
+
+[main (root-commit) 989af09] hello,world を追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 hello_world.txt
+PS C:\Users\chant\Desktop\git_challenge> echo "こんにちは、世界" >> hello_world.txt
+PS C:\Users\chant\Desktop\git_challenge> git add hello_world.txt
+PS C:\Users\chant\Desktop\git_challenge> git commit -m "日本語訳を追加"
+[main b8887a6] 日本語訳を追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\chant\Desktop\git_challenge> git log --oneline
+b8887a6 (HEAD -> main) 日本語訳を追加
+989af09 hello,world を追加
+PS C:\Users\chant\Desktop\git_challenge> 
