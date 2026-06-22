@@ -1,0 +1,29 @@
+PS C:\Users\chant> cd Desktop
+PS C:\Users\chant\Desktop> mkdir git_challenge
+
+
+    ディレクトリ: C:\Users\chant\Desktop
+
+
+Mode                 LastWriteTime         Length Name                    
+----                 -------------         ------ ----                    
+d-----        2026/06/22     15:11                git_challenge           
+
+
+PS C:\Users\chant\Desktop> cd git_challenge 
+PS C:\Users\chant\Desktop\git_challenge> echo "" >hello_world.txt
+PS C:\Users\chant\Desktop\git_challenge> echo "Hello, world!" >> hello_world.txt
+PS C:\Users\chant\Desktop\git_challenge> git add hello_world.txt
+PS C:\Users\chant\Desktop\git_challenge> git commit -m "Hello, world!を追加"
+[main (root-commit) 3591f00] Hello, world!を追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 Desktop/git_challenge/hello_world.txt
+PS C:\Users\chant\Desktop\git_challenge> echo "こんにちは、世界！" >> hello_world.txt
+PS C:\Users\chant\Desktop\git_challenge> git add hello_world.txt
+PS C:\Users\chant\Desktop\git_challenge> git commit -m "こんにちは、世界！を追加"
+[main 6fc513a] こんにちは、世界！を追加
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+PS C:\Users\chant\Desktop\git_challenge> git log --oneline 
+6fc513a (HEAD -> main) こんにちは、世界！を追加
+3591f00 Hello, world!を追加
+PS C:\Users\chant\Desktop\git_challenge> 
